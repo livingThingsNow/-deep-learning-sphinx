@@ -12,8 +12,7 @@ https//:[github-handle].github.io/[repository]
 Github.com enables pages automatically if a _gh-pages_ branch exists:
 <kbd>![gh-pages recognition](/pages-created-from-gh-pages-branch.png)</kbd>
 
-<kbd>![gh-pages recognition](/pages-created-from-gh-pages-branch.png)</kbd>
-
+reference 
 https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ## Preconditions
