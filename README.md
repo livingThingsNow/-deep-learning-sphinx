@@ -7,7 +7,7 @@ The documentation will be available following this pattern:
 
 https//:[github-handle].github.io/[repository]
 
-(e.g. https://lotharschulz.github.io/sphinx-pages/)
+(e.g. https://livingthingsnow.github.io/deep-learning-sphinx/)
 
 Github.com enables pages automatically if a _gh-pages_ branch exists:
 <kbd>![gh-pages recognition](/pages-created-from-gh-pages-branch.png)</kbd>
