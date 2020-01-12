@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. 画像分類 &mdash; Deep Learning 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. A Sphinx" href="sphinx-pages.html" />
+    <link rel="prev" title="1. ハードウエアの要件" href="GPU.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../sphinx-pages.html" class="icon icon-home"> Deep Learning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Deep Learning for Computer Vision</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#id1">画像分類</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#id2">ハードウェアの要件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#id3">ソフトウェアの要件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#id4">資料</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#id5">サンプルドキュメント</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="GPU.html">1. ハードウエアの要件</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2. 画像分類</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">2.1. 画像情報</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">2.2. 画像情報２</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">2.3. 資料</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#indices-and-tables">2.4. Indices and tables</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sphinx-pages.html">3. A Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#a-sphinx">A Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../sphinx-pages.html">Deep Learning</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../sphinx-pages.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Deep Learning for Computer Vision</a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>画像分類</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/report/Image_Claffification.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1><span class="section-number">2. </span>画像分類<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2><span class="section-number">2.1. </span>画像情報<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>日時： 2019/12/31</p></li>
+<li><p>場所： Musashikoganei</p></li>
+<li><p>参加者： planset, …</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2><span class="section-number">2.2. </span>画像情報２<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Sphinxの勉強会に参加してきました。</p>
+<p>Sphinxとは次のようなツールです。</p>
+<blockquote>
+<div><p>Spihnxは、reStructuredText記法で書かれたテキストファイルをHTML、PDFやepubなどに変換するためのツールです。</p>
+<p>Pythonの公式ドキュメントはSphinxを使って書かれています。
+また、Python以外の多くのプロジェクトでもSphinxが利用されています。</p>
+</div></blockquote>
+<p>勉強会では、勉強会のレポートを書きながらSphinxについて学びました。</p>
+<p>sphinxを利用するために必要なこと</p>
+<ul class="simple">
+<li><p>テキストエディタ</p></li>
+<li><p>Sphinxの環境</p>
+<ul>
+<li><p>python</p></li>
+<li><p>(pip)</p></li>
+<li><p>(virtualenv)</p></li>
+<li><p>sphinx</p></li>
+</ul>
+</li>
+<li><p>コマンドラインツールへの多少の慣れ</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2><span class="section-number">2.3. </span>資料<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://sphinx-doc.org/">http://sphinx-doc.org/</a></p></li>
+<li><p><a class="reference external" href="https://github.com">github</a></p></li>
+<li><p><a class="reference external" href="http://sphinx-users.jp/">Sphinx-users.jp</a></p></li>
+</ul>
+</div>
+<div class="section" id="indices-and-tables">
+<h2><span class="section-number">2.4. </span>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="../search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sphinx-pages.html" class="btn btn-neutral float-right" title="3. A Sphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="GPU.html" class="btn btn-neutral float-left" title="1. ハードウエアの要件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Nagayoshi Kobayashi
+      <span class="lastupdated">
+        Last updated on 2020-Jan-12.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
